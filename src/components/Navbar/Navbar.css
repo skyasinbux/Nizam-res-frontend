@@ -1,0 +1,342 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    position: fixed;
+    top: 0;
+    padding: 0rem 2rem;
+}
+.logo-flex{
+    display: flex;
+    flex-direction: column;
+}
+.nizam_en{
+    width: 400px;
+    margin-top: -10px;
+    height: 100px;
+
+
+}
+
+
+@media screen and (min-width: 2000px) {
+    .nizam_en {
+        width: 400px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .nizam_en {
+        width: 350px;
+        height: 90px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .nizam_en {
+        width: 300px;
+        height: 70px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .nizam_en {
+        width: 275px;
+        height: 62px;
+        
+    }
+}
+.nizam_urdu{
+    width: 350px;
+    height: 40px;
+}
+
+
+@media screen and (min-width: 2000px) {
+    .nizam_urdu {
+        width: 400px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .nizam_urdu {
+        width: 400px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nizam_urdu {
+        width: 300px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nizam_urdu {
+        width: 200px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .nizam_urdu {
+        width: 140px;
+        height: 25px;
+    }
+}
+
+.charminar{
+    width: 70px;
+    height: 70px;
+
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+}
+
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app__navbar-links li:hover {
+    color: var(--color-grey);
+}
+
+.app__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: .5s ease;
+}
+
+.app__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+
+.app__navbar-login div {
+    width: 1px;
+    height: 30px;
+    background: var(--color-grey);
+}
+
+.app__navbar-smallscreen {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-black);
+    transition: .5s ease;
+
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 37px;
+    color: var(--color-golden);
+    cursor: pointer;
+
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.app__navbar-smallscreen_links {
+    list-style: none;
+    padding-bottom: 100px;
+
+}
+
+.app__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+.app__navbar-smallscreen_links li:hover {
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__navbar-logo img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none;
+    }
+
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+
+    .app__navbar-login {
+        display: none;
+    }
+
+    .app__navbar-logo img {
+        width: 110px;
+    }
+    
+}
+.toggle_icon{
+    font-size: 38px;
+    color: var(--color-golden);
+}
+
+@media screen and (max-width: 1150px) {
+    .toggle_icon{
+
+        font-size: 45px;
+        color: var(--color-golden);
+    }
+}
+@media screen and (max-width: 650px) {
+    .toggle_icon{
+        font-size: 45px;
+        color: var(--color-golden);
+    }
+}
+@media screen and (max-width: 550px) {
+    .toggle_icon{
+        font-size: 42px;
+        color: var(--color-golden);
+    }
+}
+
+.Btn-order-now {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .Btn-order-now::before {
+    position: absolute;
+    content: "ORDER NOW";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .Btn-order-now:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn-order-now:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn-order-now:active {
+    transform: scale(0.95);
+  }
+
+/* BOOK TABLE */
+.Btn-book-table {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+  
+  .Btn-book-table::before {
+    position: absolute;
+    content: "BOOK TABLE";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  
+  .Btn-book-table:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn-book-table:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .Btn-book-table:active {
+    transform: scale(0.95);
+  }
